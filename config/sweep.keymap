@@ -924,13 +924,13 @@
 
         combo_mouse_l {
             bindings = <&mo 12>;
-            key-positions = <12 22>;
+            key-positions = <13 23>;
             layers = <3 0 1>;
         };
 
         combo_mouse_r {
             bindings = <&tog 12>;
-            key-positions = <13 23>;
+            key-positions = <17 7>;
             layers = <3 0 1 12>;
         };
 
@@ -1295,10 +1295,10 @@
 
         mouse {
             bindings = <
-  &tog 12    &m_warpd_hint   &kp ESC          &kp LCTRL  &none                        &none     &mkp LCLK          &msc SCRL_UP       &msc SCRL_DOWN    &mkp RCLK
-  &mkp RCLK  &msc SCRL_DOWN  &msc SCRL_UP     &mkp LCLK  &none                        &kp LALT  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &kp LGUI   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LSHFT  &none                        &none     &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                                         &tog 12  &kp ESC    &kp RET  &kp LALT      
+  &kp LALT   &kp ESC         &tog 12          &m_warpd_hint  &kp LSHFT                      &kp LSHFT  &mkp LCLK          &msc SCRL_UP       &msc SCRL_DOWN    &mkp RCLK
+  &mkp RCLK  &msc SCRL_DOWN  &msc SCRL_UP     &mkp LCLK      &kp LALT                       &kp LALT   &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &kp LGUI   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp LSHFT      &kp LCTRL                      &kp LCTRL  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
+                                                             &tog 12    &kp ESC    &kp RET  &kp LALT       
             >;
 
             display-name = "MOUSE";
