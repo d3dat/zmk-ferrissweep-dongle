@@ -1170,6 +1170,11 @@
             key-positions = <12 22>;
             layers = <3>;
         };
+
+        combo_rctrl {
+            bindings = <&kp RCTRL>;
+            key-positions = <17 18>;
+        };
     };
 
     keymap {
@@ -1183,7 +1188,7 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T         &kp Y       &ht_ssk LSHFT U  &ht LCTRL I  &ht LALT O  &ht LGUI P
+  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T         &kp Y       &ht_ssk LSHFT U  &ht RCTRL I  &ht LALT O  &ht LGUI P
   &hlt 10 A   &hlt 6 S    &hlt 8 D     &hlt 4 F         &hlt 12 G     &kp H       &hlt 11 J        &kp K        &kp L       &kp SEMI
   &kp Z       &kp X       &kp C        &hlt 7 V         &kp B         &kp N       &kp M            &kp COMMA    &kp DOT     &kp FSLH
                                        &lt 3 SPACE      &lt 13 ESC    &lt 12 RET  &lt 7 SPACE
@@ -1194,7 +1199,7 @@
 
         ru {
             bindings = <
-  &ht LGUI RU_CYRILLIC_SHORT_I  &ht LALT RU_CYRILLIC_TSE     &ht LCTRL RU_CYRILLIC_U  &ht_ssk LSHFT RU_CYRILLIC_KA  &trans                    &trans      &ht_ssk LSHFT RU_CYRILLIC_GHE  &ht LCTRL RU_CYRILLIC_SHA                 &ht LALT RU_CYRILLIC_SHCHA        &ht LGUI RU_CYRILLIC_ZE
+  &ht LGUI RU_CYRILLIC_SHORT_I  &ht LALT RU_CYRILLIC_TSE     &ht LCTRL RU_CYRILLIC_U  &ht_ssk LSHFT RU_CYRILLIC_KA  &trans                    &trans      &ht_ssk LSHFT RU_CYRILLIC_GHE  &ht RCTRL RU_CYRILLIC_SHA                 &ht LALT RU_CYRILLIC_SHCHA        &ht LGUI RU_CYRILLIC_ZE
   &hlt 10 RU_CYRILLIC_EF        &hlt_sym 0 RU_CYRILLIC_YERU  &hlt 9 RU_CYRILLIC_VE    &hlt 5 RU_CYRILLIC_A          &hlt 12 RU_CYRILLIC_PE    &trans      &hlt 11 RU_CYRILLIC_O          &tp RU_CYRILLIC_IO RU_CYRILLIC_EL         &tp RU_CYRILLIC_E RU_CYRILLIC_DE  &trans
   &trans                        &trans                       &trans                   &hlt_ext 0 RU_CYRILLIC_EM     &trans                    &trans      &trans                         &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_BE  &trans                            &kp RU_CYRILLIC_HA
                                                                                       &lt 3 SPACE                   &lt 13 ESC                &lt 12 RET  &lt 7 SPACE
