@@ -1263,9 +1263,9 @@
 
         ext {
             bindings = <
-  &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS   &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
-  &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET   &kp DEL    &kp ASTERISK
-  &none   &none          &none             &none            &none      &kp QMARK  &kp EXCL       &m_comma  &m_dot     &kp SLASH
+  &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS   &kp MINUS      &kp DQT  &kp COLON  &kp SEMI
+  &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET  &kp DEL    &kp ASTERISK
+  &none   &none          &none             &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp SLASH
                                            &tp LSHFT SPACE  &kp ESC    &kp RET    &kp SPACE
             >;
 
@@ -1286,19 +1286,19 @@
         sym {
             display-name = "SYM ";
             bindings = <
-  &none     &none  &none      &none      &none      &none      &kp LBKT        &kp RBKT       &kp LPAR          &kp RPAR
-  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none      &kp CARET  &kp UNDERSCORE  &kp AT_SIGN    &kp HASH          &kp DOLLAR
-  &none     &none  &none      &none      &none      &none      &kp LEFT_BRACE  &kp LESS_THAN  &kp GREATER_THAN  &kp RIGHT_BRACE
-                              &kp LALT   &kp ESC    &kp RET    &kp SPACE
+  &none     &none  &none      &none      &none      &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none      &kp CARET      &kp UNDERSCORE        &kp AT_SIGN            &kp HASH          &kp DOLLAR
+  &none     &none  &none      &none      &none      &kp BACKSLASH  &kp PIPE              &kp PERCENT            &kp LEFT_BRACE    &kp RIGHT_BRACE
+                              &kp LALT   &kp ESC    &kp RET        &kp SPACE
             >;
         };
 
         sym_ru {
             display-name = "SYM RU";
             bindings = <
-  &none     &none  &none      &none      &none      &none    &kp LEFT_BRACKET   &kp RIGHT_BRACKET          &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS
-  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none      &none    &kp RU_UNDERSCORE  &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_E        &kp RU_CYRILLIC_IO
-  &none     &none  &none      &none      &none      &none    &none              &none                      &none                    &none
+  &none     &none  &none      &none      &none      &none    &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS   &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none      &none    &none                    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_E  &kp RU_CYRILLIC_IO
+  &none     &none  &none      &none      &none      &none    &none                    &none                      &none              &none
                               &kp LALT   &kp ESC    &kp RET  &kp SPACE
             >;
         };
