@@ -1335,10 +1335,10 @@
 
         hint {
             bindings = <
-  &kp Q  &kp W  &kp E  &kp R           &kp T           &kp Y  &kp U  &kp I      &kp O    &kp P
-  &kp A  &kp S  &kp D  &hlt 13 F       &kp G           &kp H  &kp J  &kp K      &kp L    &kp SEMI
-  &kp Z  &kp X  &kp C  &kp V           &kp B           &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                       &m_warpd_click  &m_warpd_esc    &none  &none
+  &kp Q  &kp W  &m_warpd_esc  &kp R           &kp T             &kp Y  &kp U  &kp I      &kp O    &kp P
+  &kp A  &kp S  &kp D         &hlt 13 F       &kp G             &kp H  &kp J  &kp K      &kp L    &kp SEMI
+  &kp Z  &kp X  &kp C         &kp V           &kp B             &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH
+                              &m_warpd_click  &macro_mod_off    &none  &none
             >;
 
             display-name = "HINT";
