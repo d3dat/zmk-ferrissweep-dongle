@@ -1219,9 +1219,9 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T             &kp Y       &hmr RSHFT U  &hmr RCTRL I  &hmr RALT O  &hmr RGUI P
-  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &hlt 11 G         &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-  &kp Z        &kp X        &kp C         &hlt 7 V      &kp B             &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
+  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T             &kp Y       &kp U         &kp I         &kp O        &kp P
+  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &kp G             &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
+  &kp Z        &kp X        &kp C         &kp V         &kp B             &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
                                           &lt 3 SPACE   &macro_mod_off    &lt 11 RET  &kp SPACE
             >;
 
