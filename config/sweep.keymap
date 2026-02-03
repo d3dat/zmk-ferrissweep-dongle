@@ -1230,10 +1230,10 @@
 
         ru {
             bindings = <
-  &ht LGUI RU_CYRILLIC_SHORT_I  &ht LALT RU_CYRILLIC_TSE     &ht LCTRL RU_CYRILLIC_U  &ht_ssk LSHFT RU_CYRILLIC_KA  &trans                    &trans      &ht_ssk RSHFT RU_CYRILLIC_GHE  &ht RCTRL RU_CYRILLIC_SHA                 &ht RALT RU_CYRILLIC_SHCHA        &ht RGUI RU_CYRILLIC_ZE
-  &hlt 10 RU_CYRILLIC_EF        &hlt_sym 0 RU_CYRILLIC_YERU  &hlt 9 RU_CYRILLIC_VE    &hlt 5 RU_CYRILLIC_A          &hlt 11 RU_CYRILLIC_PE    &trans      &kp RU_CYRILLIC_O              &tp RU_CYRILLIC_IO RU_CYRILLIC_EL         &tp RU_CYRILLIC_E RU_CYRILLIC_DE  &trans
-  &trans                        &trans                       &trans                   &hlt_ext 0 RU_CYRILLIC_EM     &trans                    &trans      &trans                         &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_BE  &trans                            &kp RU_CYRILLIC_HA
-                                                                                      &lt 3 SPACE                   &macro_mod_off            &lt 11 RET  &lt 7 SPACE
+  &hml LGUI RU_CYRILLIC_SHORT_I  &hml LALT RU_CYRILLIC_TSE  &hml LCTRL RU_CYRILLIC_U  &hml LSHFT RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
+  &hlt 10 RU_CYRILLIC_EF         &hlt 7 RU_CYRILLIC_YERU    &hlt 9 RU_CYRILLIC_VE     &hlt 5 RU_CYRILLIC_A       &kp RU_CYRILLIC_PE    &kp RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
+  &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE        &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_HA
+                                                                                      &lt 3 SPACE                &macro_mod_off        &lt 11 RET          &kp SPACE
             >;
 
             display-name = "RU";
@@ -1261,7 +1261,7 @@
             display-name = "NAV";
         };
 
-        alt {
+        ext {
             bindings = <
   &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS   &kp MINUS      &kp DQT   &kp COLON  &kp SEMI
   &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET   &kp DEL    &kp ASTERISK
@@ -1269,10 +1269,10 @@
                                            &tp LSHFT SPACE  &kp ESC    &kp RET    &kp SPACE
             >;
 
-            display-name = "ALT";
+            display-name = "EXT";
         };
 
-        alt_ru {
+        ext_ru {
             bindings = <
   &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
   &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
@@ -1280,7 +1280,7 @@
                                            &tp LSHFT SPACE  &kp ESC    &kp RET          &kp SPACE
             >;
 
-            display-name = "ALT RU";
+            display-name = "EXT RU";
         };
 
         sym {
@@ -1293,8 +1293,8 @@
             >;
         };
 
-        ext {
-            display-name = "EXT";
+        sym_ru {
+            display-name = "SYM RU";
             bindings = <
   &none     &none     &none      &none      &none      &none    &kp LEFT_BRACE  &kp RIGHT_BRACE  &none       &none
   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none      &none    &none           &kp CARET        &kp DOLLAR  &kp PERCENT
