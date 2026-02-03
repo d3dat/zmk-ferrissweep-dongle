@@ -1208,7 +1208,7 @@
   &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T             &kp Y       &ht_ssk RSHFT U  &ht RCTRL I  &ht RALT O  &ht RGUI P
   &hlt 10 A   &hlt 6 S    &hlt 8 D     &hlt 4 F         &hlt 11 G         &kp H       &kp J            &kp K        &kp L       &kp SEMI
   &kp Z       &kp X       &kp C        &hlt 7 V         &kp B             &kp N       &kp M            &kp COMMA    &kp DOT     &kp FSLH
-                                       &lt 3 SPACE      &macro_mod_off    &lt 11 RET  &kp RGUI
+                                       &lt 3 SPACE      &macro_mod_off    &lt 11 RET  &kp K_MENU
             >;
 
             display-name = "EN";
