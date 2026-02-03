@@ -55,7 +55,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35>;
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 33 34 35 32>;
             hold-trigger-on-release;
         };
 
@@ -68,7 +68,7 @@
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
-            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31 32>;
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 31>;
             hold-trigger-on-release;
         };
 
@@ -411,14 +411,7 @@
         m_en: m_en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL>,
-                <&macro_tap>,
-                <&kp LCTRL>,
-                <&macro_release>,
-                <&kp RCTRL>;
-
+            bindings = <&kp RC(LCTRL)>;
             label = "M_EN";
             wait-ms = <0>;
             tap-ms = <0>;
@@ -951,18 +944,19 @@
         combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <6 7>;
+            layers = <0>;
         };
 
         combo_mouse_l {
             bindings = <&mo 11>;
-            key-positions = <13 23>;
+            key-positions = <11 12>;
             layers = <0 1>;
         };
 
         combo_mouse_r {
             bindings = <&tog 11>;
-            key-positions = <17 16>;
-            layers = <3 0 1>;
+            key-positions = <17 18>;
+            layers = <3 0 1 11>;
         };
 
         combo_bootloader_l {
@@ -1039,7 +1033,7 @@
 
         c_ru_alt {
             bindings = <&tog 2>;
-            key-positions = <33 34>;
+            key-positions = <33 34 32>;
         };
 
         ret {
@@ -1198,13 +1192,19 @@
 
         combo_rctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <17 18>;
+            key-positions = <27 28>;
         };
 
         combo_mouse_exit {
             bindings = <&tog 11>;
-            key-positions = <13 12>;
+            key-positions = <>;
             layers = <11>;
+        };
+
+        combo_caps_lock {
+            bindings = <&caps_word>;
+            key-positions = <6 7>;
+            layers = <1>;
         };
     };
 
@@ -1219,10 +1219,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &ht LGUI Q  &ht LALT W  &ht LCTRL E  &ht_ssk LSHFT R  &kp T             &kp Y       &ht_ssk RSHFT U  &ht RCTRL I  &ht RALT O  &ht RGUI P
-  &hlt 10 A   &hlt 6 S    &hlt 8 D     &hlt 4 F         &hlt 11 G         &kp H       &kp J            &kp K        &kp L       &kp SEMI
-  &kp Z       &kp X       &kp C        &hlt 7 V         &kp B             &kp N       &kp M            &kp COMMA    &kp DOT     &kp FSLH
-                                       &lt 3 SPACE      &macro_mod_off    &lt 11 RET  &kp SPACE
+  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T             &kp Y       &hmr RSHFT U  &hmr RCTRL I  &hmr RALT O  &hmr RGUI P
+  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &hlt 11 G         &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
+  &kp Z        &kp X        &kp C         &hlt 7 V      &kp B             &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
+                                          &lt 3 SPACE   &macro_mod_off    &lt 11 RET  &kp SPACE
             >;
 
             display-name = "EN";
