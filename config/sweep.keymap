@@ -1215,8 +1215,8 @@
             layers = <3>;
         };
 
-        combo_rctrl {
-            bindings = <&kp RCTRL>;
+        combo_scroll_lock {
+            bindings = <&kp SCROLLLOCK>;
             key-positions = <18 17>;
         };
 
@@ -1252,10 +1252,10 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T             &kp Y       &kp U         &kp I         &kp O        &kp P
-  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &kp G             &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-  &kp Z        &kp X        &kp C         &kp V         &kp B             &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                                          &lt 3 SPACE   &macro_mod_off    &lt 11 RET  &kp SPACE
+  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T         &kp Y       &kp U         &kp I         &kp O        &kp P
+  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &kp G         &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
+  &kp Z        &kp X        &kp C         &kp V         &kp B         &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
+                                          &lt 3 SPACE   &lt 11 ESC    &lt 11 RET  &kp SPACE
             >;
 
             display-name = "EN";
@@ -1266,7 +1266,7 @@
   &hml LGUI RU_CYRILLIC_SHORT_I  &hml LALT RU_CYRILLIC_TSE  &hml LCTRL RU_CYRILLIC_U  &hml LSHFT RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hlt 10 RU_CYRILLIC_EF         &hlt 7 RU_CYRILLIC_YERU    &hlt 9 RU_CYRILLIC_VE     &hlt 5 RU_CYRILLIC_A       &kp RU_CYRILLIC_PE    &kp RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE        &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_HA
-                                                                                      &lt 3 SPACE                &macro_mod_off        &lt 11 RET          &kp SPACE
+                                                                                      &lt 3 SPACE                &lt 11 ESC            &lt 11 RET          &kp SPACE
             >;
 
             display-name = "RU";
@@ -1277,7 +1277,7 @@
   &kp RU_CYRILLIC_ZHE     &kp RU_CYRILLIC_DE      &kp RU_CYRILLIC_ER     &kp RU_CYRILLIC_PE         &kp RU_CYRILLIC_GHE          &kp RU_CYRILLIC_YERU  &kp RU_CYRILLIC_YA    &kp RU_CYRILLIC_I                                &kp RU_CYRILLIC_CHE              &kp RU_CYRILLIC_HA
   &hlt 10 RU_CYRILLIC_VE  &hlt 11 RU_CYRILLIC_ES  &hlt 9 RU_CYRILLIC_TE  &hlt 5 RU_CYRILLIC_EN      &hlt_ext 0 RU_CYRILLIC_EL    &kp RU_CYRILLIC_U     &hlt 0 RU_CYRILLIC_O  &tp RU_CYRILLIC_IO RU_CYRILLIC_IE                &tp RU_CYRILLIC_E RU_CYRILLIC_A  &kp RU_CYRILLIC_KA
   &kp RU_CYRILLIC_TSE     &kp RU_CYRILLIC_BE      &kp RU_CYRILLIC_ZE     &hlt_sym 0 RU_CYRILLIC_EM  &kp RU_CYRILLIC_SHORT_I      &kp RU_CYRILLIC_EF    &kp RU_CYRILLIC_SHA   &tp RU_CYRILLIC_HARD_SIGN RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_YU               &kp RU_CYRILLIC_SHCHA
-                                                                         &lt 3 SPACE                &macro_mod_off               &kp RET               &lt 0 SPACE
+                                                                         &lt 3 SPACE                &lt 11 ESC                   &kp RET               &lt 0 SPACE
             >;
 
             display-name = "RU ALT";
@@ -1285,10 +1285,10 @@
 
         nav {
             bindings = <
-  &tog 11       &m_warpd_hint  &kp ESCAPE  &key_repeat  &kp CAPS     &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
-  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT    &swap_win    &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)    &swap_tab    &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
-                                           &kp SPACE    &kp ESC      &kp RET    &kp SPACE
+  &tog 11       &m_warpd_hint  &kp ESCAPE  &key_repeat  &kp CAPS          &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &sk LEFT_GUI  &sk LALT       &sk LCTRL   &sk LSHFT    &swap_win         &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)    &swap_tab         &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
+                                           &kp SPACE    &macro_mod_off    &kp RET    &kp SPACE
             >;
 
             display-name = "NAV";
