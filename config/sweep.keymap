@@ -928,10 +928,11 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
+                <&macro_tap_time 1000>,
                 <&m_en>,
-                <&macro_wait_time 10>,
+                <&macro_wait_time 100>,
                 <&kp LEFT_BRACKET>,
-                <&macro_wait_time 10>,
+                <&macro_wait_time 100>,
                 <&m_ru>;
 
             label = "M_R_LBKT";
@@ -942,9 +943,9 @@
             #binding-cells = <0>;
             bindings =
                 <&m_en>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 1000>,
                 <&kp RIGHT_BRACKET>,
-                <&macro_wait_time 100>,
+                <&macro_wait_time 1000>,
                 <&m_ru>;
 
             label = "M_R_RBKT";
