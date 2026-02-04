@@ -947,7 +947,7 @@
             key-positions = <1 2>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
-            layers = <0 1 2 3 4 5 7 6 8 9 10 11>;
+            layers = <0 1 2 3 4 5 7 6 8 9 10>;
         };
 
         combo_ret {
@@ -1194,7 +1194,7 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <2 12>;
-            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
+            layers = <0 1 2 3 4 5 6 7 8 9 10>;
         };
 
         warpd_esc {
@@ -1230,6 +1230,14 @@
             bindings = <&caps_word>;
             key-positions = <6 7>;
             layers = <1>;
+        };
+
+        mouse_esc {
+            bindings = <&tog 11>;
+            key-positions = <1 2>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <11>;
         };
     };
 
