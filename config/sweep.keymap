@@ -980,8 +980,8 @@
 
         combo_mouse_r {
             bindings = <&tog 11>;
-            key-positions = <17 18>;
-            layers = <3 0 1 11>;
+            key-positions = <21 22>;
+            layers = <3 0 1>;
         };
 
         combo_bootloader_l {
@@ -1217,7 +1217,7 @@
 
         combo_rctrl {
             bindings = <&kp RCTRL>;
-            key-positions = <27 28>;
+            key-positions = <18 17>;
         };
 
         combo_mouse_exit {
