@@ -942,9 +942,9 @@
             #binding-cells = <0>;
             bindings =
                 <&m_en>,
-                <&macro_wait_time 10>,
+                <&macro_wait_time 100>,
                 <&kp RIGHT_BRACKET>,
-                <&macro_wait_time 10>,
+                <&macro_wait_time 100>,
                 <&m_ru>;
 
             label = "M_R_RBKT";
