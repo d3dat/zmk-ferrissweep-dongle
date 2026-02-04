@@ -927,14 +927,26 @@
         m_r_lbkt: m_r_lbkt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&m_en &kp LEFT_BRACKET &m_ru>;
+            bindings =
+                <&m_en>,
+                <&macro_wait_time 10>,
+                <&kp LEFT_BRACKET>,
+                <&macro_wait_time 10>,
+                <&m_ru>;
+
             label = "M_R_LBKT";
         };
 
         m_r_rbkt: m_r_rbkt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&m_en &kp RIGHT_BRACKET &m_ru>;
+            bindings =
+                <&m_en>,
+                <&macro_wait_time 10>,
+                <&kp RIGHT_BRACKET>,
+                <&macro_wait_time 10>,
+                <&m_ru>;
+
             label = "M_R_RBKT";
         };
     };
@@ -1298,7 +1310,7 @@
             bindings = <
   &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS   &kp MINUS      &kp DQT  &kp COLON  &kp SEMI
   &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET  &kp DEL    &kp ASTERISK
-  &none   &none          &none             &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp SLASH
+  &none   &none          &none             &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp AMPERSAND
                                            &tp LSHFT SPACE  &kp ESC    &kp RET    &kp SPACE
             >;
 
