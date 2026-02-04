@@ -927,27 +927,14 @@
         m_r_lbkt: m_r_lbkt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_tap_time 1000>,
-                <&m_en>,
-                <&macro_wait_time 100>,
-                <&kp LEFT_BRACKET>,
-                <&macro_wait_time 100>,
-                <&m_ru>;
-
+            bindings = <&m_en &kp LEFT_BRACKET &m_ru>;
             label = "M_R_LBKT";
         };
 
         m_r_rbkt: m_r_rbkt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&m_en>,
-                <&macro_wait_time 1000>,
-                <&kp RIGHT_BRACKET>,
-                <&macro_wait_time 1000>,
-                <&m_ru>;
-
+            bindings = <&m_en &kp RIGHT_BRACKET &m_ru>;
             label = "M_R_RBKT";
         };
     };
@@ -1342,7 +1329,7 @@
         sym_ru {
             display-name = "SYM RU";
             bindings = <
-  &none     &none  &none      &none      &none      &none    &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS   &kp LEFT_BRACKET   &kp RIGHT_BRACKET
+  &none     &none  &none      &none      &none      &none    &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS   &m_r_lbkt          &m_r_rbkt
   &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none      &none    &none                    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_E  &kp RU_CYRILLIC_IO
   &none     &none  &none      &none      &none      &none    &none                    &none                      &none              &none
                               &kp LALT   &kp ESC    &kp RET  &kp SPACE
