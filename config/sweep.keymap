@@ -978,7 +978,7 @@
             layers = <0 1>;
         };
 
-        combo_mouse_r {
+        combo_mouse {
             bindings = <&tog 11>;
             key-positions = <21 22>;
             layers = <3 0 1>;
@@ -1217,7 +1217,7 @@
 
         combo_scroll_lock {
             bindings = <&kp SCROLLLOCK>;
-            key-positions = <18 17>;
+            key-positions = <27 28>;
         };
 
         combo_mouse_exit {
@@ -1239,6 +1239,12 @@
             require-prior-idle-ms = <200>;
             layers = <11>;
         };
+
+        combo_mouse_r {
+            bindings = <&mo 11>;
+            key-positions = <17 18>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
@@ -1252,8 +1258,8 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T         &kp Y       &kp U         &kp I         &kp O        &kp P
-  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &kp G         &kp H       &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
+  &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T         &kp Y       &hmr RSHFT U  &hmr RCTRL I  &hmr RALT O  &hmr RGUI P
+  &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &kp G         &kp H       &kp J         &kp K         &kp L        &kp SEMI
   &kp Z        &kp X        &kp C         &kp V         &kp B         &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
                                           &lt 3 SPACE   &lt 11 ESC    &lt 11 RET  &kp SPACE
             >;
