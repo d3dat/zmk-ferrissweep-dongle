@@ -1042,7 +1042,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <7 8>;
+            key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -1050,7 +1050,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <8 7>;
+            key-positions = <18 17>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -1227,7 +1227,7 @@
         };
 
         combo_caps_lock {
-            bindings = <&caps_word>;
+            bindings = <&kp CAPS>;
             key-positions = <6 7>;
             layers = <1>;
         };
