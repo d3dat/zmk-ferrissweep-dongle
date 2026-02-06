@@ -1042,7 +1042,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <17 18>;
+            key-positions = <17 16>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -1050,7 +1050,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <18 17>;
+            key-positions = <17 16>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
