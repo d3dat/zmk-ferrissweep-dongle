@@ -1245,6 +1245,14 @@
             key-positions = <17 18>;
             layers = <0 1>;
         };
+
+        combo_esc2 {
+            bindings = <&kp ESC>;
+            key-positions = <13 12>;
+            timeout-ms = <30>;
+            require-prior-idle-ms = <200>;
+            layers = <0 1 2 3 4 5 7 6 8 9 10>;
+        };
     };
 
     keymap {
