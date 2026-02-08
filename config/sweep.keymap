@@ -1269,7 +1269,7 @@
   &hml LGUI Q  &hml LALT W  &hml LCTRL E  &hml LSHFT R  &kp T         &kp Y       &hmr RSHFT U   &hmr RCTRL I  &hmr RALT O  &hmr RGUI P
   &hlt 10 A    &hlt 6 S     &hlt 8 D      &hlt 4 F      &kp G         &kp H       &kp J          &kp K         &kp L        &kp SEMI
   &kp Z        &kp X        &kp C         &kp V         &kp B         &kp N       &kp M          &kp COMMA     &kp DOT      &kp FSLH
-                                          &lt 3 SPACE   &lt 11 ESC    &lt 11 RET  &kp LC(SPACE)
+                                          &lt 3 SPACE   &lt 11 ESC    &lt 11 RET  &kp LC(GRAVE)
             >;
 
             display-name = "EN";
@@ -1280,7 +1280,7 @@
   &hml LGUI RU_CYRILLIC_SHORT_I  &hml LALT RU_CYRILLIC_TSE  &hml LCTRL RU_CYRILLIC_U  &hml LSHFT RU_CYRILLIC_KA  &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN  &hmr RSHFT RU_CYRILLIC_GHE  &hmr RCTRL RU_CYRILLIC_SHA  &hmr RALT RU_CYRILLIC_SHCHA  &hmr RGUI RU_CYRILLIC_ZE
   &hlt 10 RU_CYRILLIC_EF         &hlt 7 RU_CYRILLIC_YERU    &hlt 9 RU_CYRILLIC_VE     &hlt 5 RU_CYRILLIC_A       &kp RU_CYRILLIC_PE    &kp RU_CYRILLIC_ER  &kp RU_CYRILLIC_O           &kp RU_CYRILLIC_EL          &kp RU_CYRILLIC_DE           &kp RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE        &kp RU_CYRILLIC_ES        &kp RU_CYRILLIC_EM         &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE  &kp RU_CYRILLIC_SOFT_SIGN   &kp RU_CYRILLIC_BE          &kp RU_CYRILLIC_YU           &kp RU_CYRILLIC_HA
-                                                                                      &lt 3 SPACE                &lt 11 ESC            &lt 11 RET          &kp SPACE
+                                                                                      &lt 3 SPACE                &lt 11 ESC            &lt 11 RET          &kp LC(GRAVE)
             >;
 
             display-name = "RU";
