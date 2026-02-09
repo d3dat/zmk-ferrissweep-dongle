@@ -340,14 +340,14 @@
             flavor = "tap-preferred";
         };
 
-        tp_caps: tp_caps {
+        tp_ssk: tp_ssk {
             compatible = "zmk,behavior-hold-tap";
-            label = "TP_CAPS";
+            label = "TP_SSK";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&m_caps_word>;
+            bindings = <&kp>, <&ssk>;
 
             require-prior-idle-ms = <200>;
         };
@@ -1203,18 +1203,6 @@
             layers = <12 13>;
         };
 
-        c_speech_start {
-            bindings = <&kp F17>;
-            key-positions = <23 13>;
-            layers = <3>;
-        };
-
-        c_speech_stop {
-            bindings = <&kp F18>;
-            key-positions = <12 22>;
-            layers = <3>;
-        };
-
         combo_scroll_lock {
             bindings = <&kp SCROLLLOCK>;
             key-positions = <27 28>;
@@ -1252,6 +1240,12 @@
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
             layers = <0 1 2 3 4 5 7 6 8 9 10>;
+        };
+
+        combo_ssk_shift {
+            bindings = <&ssk LSHFT>;
+            key-positions = <2 3>;
+            layers = <0 1>;
         };
     };
 
@@ -1310,10 +1304,10 @@
 
         ext {
             bindings = <
-  &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS   &kp MINUS      &kp DQT  &kp COLON  &kp SEMI
-  &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET  &kp DEL    &kp ASTERISK
-  &none   &none          &none             &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp AMPERSAND
-                                           &tp LSHFT SPACE  &kp ESC    &kp RET    &kp SPACE
+  &none   &m_warpd_hint  &kp ESC              &none            &none      &kp PLUS   &kp MINUS      &kp DQT  &kp COLON  &kp SEMI
+  &mo 16  &kp LALT       &tp_ssk LCTRL LSHFT  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET  &kp DEL    &kp ASTERISK
+  &none   &none          &none                &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp AMPERSAND
+                                              &tp LSHFT SPACE  &kp ESC    &kp RET    &kp SPACE
             >;
 
             display-name = "EXT";
@@ -1321,10 +1315,10 @@
 
         ext_ru {
             bindings = <
-  &none   &m_warpd_hint  &kp ESC           &none            &none      &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
-  &mo 16  &kp LALT       &tp_caps LCTRL 0  &none            &none      &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
-  &none   &none          &none             &none            &none      &kp RU_QUESTION  &kp EXCL       &mm_r_comma  &mm_r_dot     &kp RU_SLASH
-                                           &tp LSHFT SPACE  &kp ESC    &kp RET          &kp SPACE
+  &none   &m_warpd_hint  &kp ESC              &none            &none      &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
+  &mo 16  &kp LALT       &tp_ssk LCTRL LSHFT  &none            &none      &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
+  &none   &none          &none                &none            &none      &kp RU_QUESTION  &kp EXCL       &mm_r_comma  &mm_r_dot     &kp RU_SLASH
+                                              &tp LSHFT SPACE  &kp ESC    &kp RET          &kp SPACE
             >;
 
             display-name = "EXT RU";
