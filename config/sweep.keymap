@@ -1265,7 +1265,7 @@
         };
 
         combo_shift {
-            bindings = <&kp RET>;
+            bindings = <&kp LSHFT>;
             key-positions = <12 13>;
             layers = <0 1 2>;
             require-prior-idle-ms = <250>;
