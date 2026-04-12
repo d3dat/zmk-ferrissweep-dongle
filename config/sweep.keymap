@@ -1264,12 +1264,20 @@
             layers = <0 1>;
         };
 
-        combo_shift {
-            bindings = <&kp LSHFT>;
+        combo_ext {
+            bindings = <&mo 4>;
             key-positions = <12 13>;
-            layers = <0 1 2>;
+            layers = <0>;
             require-prior-idle-ms = <250>;
-            timeout-ms = <30>;
+            timeout-ms = <50>;
+        };
+
+        combo_ext_ru {
+            bindings = <&mo 5>;
+            key-positions = <12 13>;
+            require-prior-idle-ms = <250>;
+            layers = <1>;
+            timeout-ms = <50>;
         };
     };
 
