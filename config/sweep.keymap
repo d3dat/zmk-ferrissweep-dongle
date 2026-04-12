@@ -1370,10 +1370,10 @@
 
         num {
             bindings = <
-  &none     &kp BACKSPACE  &none      &kp RET          &none      &kp SLASH   &kp N9     &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHIFT       &none      &kp PERIOD  &kp N5     &kp N6  &kp N7     &kp N8
-  &none     &none          &none      &none            &none      &kp COMMA   &kp N1     &kp N2  &kp N3     &kp N4
-                                      &tp LCTRL SPACE  &kp ESC    &kp RET     &kp SPACE
+  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none      &kp SLASH   &kp N9     &kp N0  &kp MINUS  &kp EQUAL
+  &none     &none     &none  &none            &none      &kp PERIOD  &kp N5     &kp N6  &kp N7     &kp N8
+  &none     &none     &none  &none            &none      &kp COMMA   &kp N1     &kp N2  &kp N3     &kp N4
+                             &tp LCTRL SPACE  &kp ESC    &kp RET     &kp SPACE
             >;
 
             display-name = "NUM";
@@ -1381,10 +1381,10 @@
 
         num_ru {
             bindings = <
-  &none     &kp BACKSPACE  &none      &kp RET          &none      &kp LS(BACKSLASH)  &kp N9     &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI  &kp LALT       &kp LCTRL  &kp LSHFT        &none      &kp SLASH          &kp N5     &kp N6  &kp N7     &kp N8
-  &none     &none          &none      &none            &none      &kp LS(SLASH)      &kp N1     &kp N2  &kp N3     &kp N4
-                                      &tp LCTRL SPACE  &kp ESC    &kp RET            &kp SPACE
+  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none      &kp LS(BACKSLASH)  &kp N9     &kp N0  &kp MINUS  &kp EQUAL
+  &none     &none     &none  &none            &none      &kp SLASH          &kp N5     &kp N6  &kp N7     &kp N8
+  &none     &none     &none  &none            &none      &kp LS(SLASH)      &kp N1     &kp N2  &kp N3     &kp N4
+                             &tp LCTRL SPACE  &kp ESC    &kp RET            &kp SPACE
             >;
 
             display-name = "NUM RU";
