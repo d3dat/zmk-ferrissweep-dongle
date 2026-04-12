@@ -1328,10 +1328,10 @@
 
         ext {
             bindings = <
-  &none   &m_warpd_hint  &kp ESC              &none            &none      &kp PLUS   &kp MINUS      &kp DQT  &kp COLON  &kp SEMI
-  &mo 16  &kp LALT       &tp_ssk LCTRL LSHFT  &none            &none      &kp TAB    &kp BACKSPACE  &kp RET  &kp DEL    &kp ASTERISK
-  &none   &none          &none                &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp AMPERSAND
-                                              &tp LSHFT SPACE  &kp ESC    &kp RET    &m_handy
+  &m_warpd_hint  &kp LALT  &kp LCTRL  &none            &none      &kp PLUS   &kp MINUS      &kp DQT  &kp COLON  &kp SEMI
+  &none          &none     &none      &none            &none      &kp TAB    &kp BACKSPACE  &kp RET  &kp DEL    &kp ASTERISK
+  &none          &none     &none      &none            &none      &kp QMARK  &kp EXCL       &kp SQT  &kp TILDE  &kp AMPERSAND
+                                      &tp LSHFT SPACE  &kp ESC    &kp RET    &m_handy
             >;
 
             display-name = "EXT";
@@ -1339,10 +1339,10 @@
 
         ext_ru {
             bindings = <
-  &none   &m_warpd_hint  &kp ESC    &none            &none      &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
-  &mo 16  &kp LALT       &kp LCTRL  &none            &none      &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
-  &none   &none          &none      &none            &none      &kp RU_QUESTION  &kp EXCL       &mm_r_comma  &mm_r_dot     &kp RU_SLASH
-                                    &tp LSHFT SPACE  &kp ESC    &kp RET          &kp SPACE
+  &m_warpd_hint  &kp LALT  &kp LCTRL  &none            &none      &kp PLUS         &kp RU_MINUS   &kp RU_DQT   &kp RU_COLON  &kp RU_SEMICOLON
+  &none          &none     &none      &none            &none      &kp TAB          &kp BACKSPACE  &kp RET      &kp DEL       &kp RU_ASTERISK
+  &none          &none     &none      &none            &none      &kp RU_QUESTION  &kp EXCL       &mm_r_comma  &mm_r_dot     &kp RU_SLASH
+                                      &tp LSHFT SPACE  &kp ESC    &kp RET          &kp SPACE
             >;
 
             display-name = "EXT RU";
