@@ -1308,9 +1308,9 @@
             //                    | GUI | LWR | ALT/ENT |   | HYPER/SPC | BKSP  | RSE |
 
             bindings = <
-  &hml LGUI Q  &hlt 6 W     &hlt 8 E      &hlt 4 R      &kp T         &kp Y       &kp U         &kp I         &kp O        &kp P
+  &hml LGUI Q  &kp W        &kp E         &kp R         &kp T         &kp Y       &kp U         &kp I         &kp O        &kp P
   &hlt 10 A    &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G         &lt 8 H     &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-  &kp Z        &kp X        &kp C         &kp V         &kp B         &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
+  &kp Z        &hlt 6 X     &hlt 8 C      &hlt 4 V      &kp B         &kp N       &kp M         &kp COMMA     &kp DOT      &kp FSLH
                                           &lt 3 SPACE   &lt 11 ESC    &lt 11 RET  &m_to_ru
             >;
 
