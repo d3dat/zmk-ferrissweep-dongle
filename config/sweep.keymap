@@ -984,7 +984,7 @@
 
         combo_ret {
             bindings = <&kp RET>;
-            key-positions = <17 18>;
+            key-positions = <17 16>;
             layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
             require-prior-idle-ms = <250>;
             timeout-ms = <50>;
@@ -1004,7 +1004,7 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <6 16>;
+            key-positions = <7 8>;
             layers = <0>;
         };
 
@@ -1078,7 +1078,7 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <17 16>;
+            key-positions = <17 18>;
             layers = <0>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -1086,7 +1086,7 @@
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <16 17>;
+            key-positions = <17 18>;
             layers = <1>;
             timeout-ms = <30>;
             require-prior-idle-ms = <200>;
@@ -1252,7 +1252,7 @@
 
         combo_caps_lock {
             bindings = <&kp CAPS>;
-            key-positions = <6 16>;
+            key-positions = <7 8>;
             layers = <1>;
         };
 
