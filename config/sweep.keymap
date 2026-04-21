@@ -1252,7 +1252,7 @@
 
         combo_caps_lock {
             bindings = <&kp CAPS>;
-            key-positions = <6 7>;
+            key-positions = <6 16>;
             layers = <1>;
         };
 
