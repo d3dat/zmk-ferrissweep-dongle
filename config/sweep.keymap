@@ -1379,10 +1379,10 @@
 
         ext {
             bindings = <
-  &m_warpd_hint  &kp LALT  &kp LCTRL  &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
-  &m_warpd_hint  &none     &none      &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
-  &none          &kp LALT  &kp LCTRL  &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
-                                      &tp LSHFT SPACE  &none    &none           &none
+  &none     &m_warpd_hint  &none  &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
+  &kp LALT  &kp LCTRL      &none  &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
+  &none     &none          &none  &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
+                                  &tp LSHFT SPACE  &none    &none           &none
             >;
 
             display-name = "EXT";
@@ -1390,10 +1390,10 @@
 
         ext_ru {
             bindings = <
-  &none          &kp LALT  &kp LCTRL  &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &m_warpd_hint  &none     &none      &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
-  &none          &kp LALT  &kp LCTRL  &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
-                                      &tp LSHFT SPACE  &none    &none              &kp SPACE
+  &none     &m_warpd_hint  &none  &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LALT  &kp LCTRL      &none  &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
+  &none     &none          &none  &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
+                                  &tp LSHFT SPACE  &none    &none              &kp SPACE
             >;
 
             display-name = "EXT RU";
