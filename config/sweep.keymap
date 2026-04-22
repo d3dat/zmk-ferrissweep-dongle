@@ -1337,7 +1337,7 @@
             bindings = <
   &hml LGUI Q  &kp W        &hlt 8 E      &hlt 6 R      &kp T     &kp Y    &kp U         &kp I         &kp O        &kp P
   &hlt 10 A    &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G     &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
-  &kp Z        &kp X        &hlt 8 C      &hlt 6 V      &kp B     &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
+  &kp Z        &kp X        &kp C         &kp V         &kp B     &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
                                           &lt 3 SPACE   &mo 11    &mo 11   &m_to_ru
             >;
 
@@ -1348,7 +1348,7 @@
             bindings = <
   &hml LGUI RU_CYRILLIC_SHORT_I  &kp RU_CYRILLIC_TSE         &hlt 9 RU_CYRILLIC_U       &hlt 7 RU_CYRILLIC_KA     &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN    &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hlt 10 RU_CYRILLIC_EF         &hml LALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE    &lt 9 RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
-  &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE         &hlt 9 RU_CYRILLIC_ES      &hlt 7 RU_CYRILLIC_EM     &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE    &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_HA
+  &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE    &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_HA
                                                                                         &lt 3 SPACE               &mo 11                &mo 11                &m_to_en
             >;
 
@@ -1404,7 +1404,7 @@
             bindings = <
   &kp LGUI  &kp LALT  &kp LCTRL  &none      &none    &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
   &none     &none     &none      &none      &none    &kp CARET      &kp PIPE              &kp AT_SIGN            &kp HASH          &kp DOLLAR
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none    &kp BACKSLASH  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE
+  &none     &none     &none      &none      &none    &kp BACKSLASH  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE
                                  &kp LSHFT  &none    &none          &none
             >;
         };
@@ -1412,10 +1412,10 @@
         sym_ru {
             display-name = "SYM RU";
             bindings = <
-  &none     &none  &none      &none      &none    &none  &kp RU_LEFT_PARENTHESIS  &kp RU_RIGHT_PARENTHESIS   &m_kp_en LEFT_BRACKET  &m_kp_en RIGHT_BRACKET
-  &none     &none  &none      &none      &none    &none  &none                    &none                      &m_kp_en HASH          &none
-  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none    &none  &none                    &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_E      &kp RU_CYRILLIC_IO
-                              &kp LALT   &none    &none  &none
+  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none    &none  &kp RU_LEFT_PARENTHESIS    &kp RU_RIGHT_PARENTHESIS  &m_kp_en LEFT_BRACKET   &m_kp_en RIGHT_BRACKET
+  &none     &none     &none      &none      &none    &none  &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_IO        &m_kp_en RU_CYRILLIC_E  &none
+  &none     &none     &none      &none      &none    &none  &m_kp_en LESS_THAN         &m_kp_en GREATER_THAN     &m_kp_en HASH           &m_kp_en SLASH
+                                 &kp LSHFT  &none    &none  &none
             >;
         };
 
@@ -1423,7 +1423,7 @@
             bindings = <
   &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
   &none     &none     &none  &none            &none    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+  &none     &none     &none  &none            &none    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
                              &tp LCTRL SPACE  &none    &none       &none
             >;
 
@@ -1434,7 +1434,7 @@
             bindings = <
   &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
   &none     &none     &none  &none            &none    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &kp LGUI  &kp LALT  &none  &kp LSHIFT       &none    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+  &none     &none     &none  &none            &none    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
                              &tp LCTRL SPACE  &none    &none              &none
             >;
 
