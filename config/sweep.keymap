@@ -1099,9 +1099,9 @@
 
         ret {
             bindings = <&kp RET>;
-            key-positions = <>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <200>;
+            key-positions = <6 16>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <250>;
         };
 
         ssk_shift_l {
