@@ -984,7 +984,7 @@
 
         combo_ret {
             bindings = <&kp RET>;
-            key-positions = <17 16>;
+            key-positions = <16 17 18>;
             layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
             require-prior-idle-ms = <250>;
             timeout-ms = <50>;
@@ -992,7 +992,7 @@
 
         combo_bs {
             bindings = <&kp BACKSPACE>;
-            key-positions = <>;
+            key-positions = <16 17>;
             timeout-ms = <50>;
             require-prior-idle-ms = <250>;
         };
@@ -1318,17 +1318,9 @@
 
         combo_del {
             bindings = <&kp DELETE>;
-            key-positions = <18 19>;
+            key-positions = <25 26>;
             timeout-ms = <50>;
             require-prior-idle-ms = <250>;
-        };
-
-        combo_ret2 {
-            bindings = <&kp RET>;
-            key-positions = <17 16 18>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <250>;
-            layers = <0 1 2 3 4 5 6 7 8 9 10 11>;
         };
     };
 
