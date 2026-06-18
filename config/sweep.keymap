@@ -1318,6 +1318,13 @@
 
         combo_del {
             bindings = <&kp DELETE>;
+            key-positions = <6 7>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <250>;
+        };
+
+        combo_ins {
+            bindings = <&kp DELETE>;
             key-positions = <26 27>;
             timeout-ms = <50>;
             require-prior-idle-ms = <250>;
@@ -1379,10 +1386,10 @@
 
         ext {
             bindings = <
-  &none     &m_warpd_hint  &none  &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
-  &kp LALT  &kp LCTRL      &none  &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
-  &none     &none          &none  &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
-                                  &tp LSHFT SPACE  &none    &none           &none
+  &none     &m_warpd_hint  &none      &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
+  &kp LGUI  &kp LALT       &kp LCTRL  &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
+  &none     &none          &none      &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
+                                      &tp LSHFT SPACE  &none    &none           &none
             >;
 
             display-name = "EXT";
@@ -1402,27 +1409,27 @@
         sym {
             display-name = "SYM ";
             bindings = <
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none    &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-  &none     &none     &none      &none      &none    &kp CARET      &kp PIPE              &kp AT_SIGN            &kp HASH          &kp DOLLAR
-  &none     &none     &none      &none      &none    &kp BACKSLASH  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE
-                                 &kp LSHFT  &none    &none          &none
+  &none     &none  &none      &none      &none    &kp GRAVE      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none    &kp CARET      &kp PIPE              &kp AT_SIGN            &kp HASH          &kp DOLLAR
+  &none     &none  &none      &none      &none    &kp BACKSLASH  &kp LESS_THAN         &kp GREATER_THAN       &kp LEFT_BRACE    &kp RIGHT_BRACE
+                              &kp LALT   &none    &none          &none
             >;
         };
 
         sym_ru {
             display-name = "SYM RU";
             bindings = <
-  &kp LGUI  &kp LALT  &kp LCTRL  &none      &none    &none  &kp RU_LEFT_PARENTHESIS    &kp RU_RIGHT_PARENTHESIS  &m_kp_en LEFT_BRACKET  &m_kp_en RIGHT_BRACKET
-  &none     &none     &none      &none      &none    &none  &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_IO        &kp RU_CYRILLIC_E      &none
-  &none     &none     &none      &none      &none    &none  &m_kp_en LESS_THAN         &m_kp_en GREATER_THAN     &m_kp_en HASH          &m_kp_en SLASH
-                                 &kp LSHFT  &none    &none  &none
+  &none     &none  &none      &none      &none    &none  &kp RU_LEFT_PARENTHESIS    &kp RU_RIGHT_PARENTHESIS  &m_kp_en LEFT_BRACKET  &m_kp_en RIGHT_BRACKET
+  &kp LGUI  &none  &kp LCTRL  &kp LSHFT  &none    &none  &kp RU_CYRILLIC_HARD_SIGN  &kp RU_CYRILLIC_IO        &kp RU_CYRILLIC_E      &none
+  &none     &none  &none      &none      &none    &none  &m_kp_en LESS_THAN         &m_kp_en GREATER_THAN     &m_kp_en HASH          &m_kp_en SLASH
+                              &kp LALT   &none    &none  &none
             >;
         };
 
         num {
             bindings = <
-  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &none     &none     &none  &none            &none    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none     &none  &none            &none    &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
   &none     &none     &none  &none            &none    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
                              &tp LCTRL SPACE  &none    &none       &none
             >;
@@ -1432,8 +1439,8 @@
 
         num_ru {
             bindings = <
-  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &none     &none     &none  &none            &none    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none     &none  &none            &none    &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT  &none  &kp LSHFT        &none    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
   &none     &none     &none  &none            &none    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
                              &tp LCTRL SPACE  &none    &none              &none
             >;
@@ -1443,10 +1450,10 @@
 
         fn {
             bindings = <
-  &none  &none     &none      &none      &none       &none       &kp F9  &kp F10  &kp F11  &kp F12
-  &none  &sk LALT  &sk LCTRL  &sk LSHFT  &none       &none       &kp F5  &kp F6   &kp F7   &kp F8
-  &none  &none     &none      &none      &none       &bat_print  &kp F1  &kp F2   &kp F3   &kp F4
-                              &none      &kp LGUI    &none       &none
+  &none  &none     &none      &none      &none    &none       &kp F9  &kp F10  &kp F11  &kp F12
+  &none  &sk LALT  &sk LCTRL  &sk LSHFT  &none    &none       &kp F5  &kp F6   &kp F7   &kp F8
+  &none  &none     &none      &none      &none    &bat_print  &kp F1  &kp F2   &kp F3   &kp F4
+                              &kp LGUI   &none    &none       &none
             >;
 
             display-name = "FN";
