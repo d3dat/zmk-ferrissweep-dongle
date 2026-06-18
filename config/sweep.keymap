@@ -950,9 +950,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&to 0>,
+                <&tog 0>,
                 <&macro_release>,
-                <&kp LSHFT &kp LCTRL &kp LALT &kp LGUI>;
+                <&kp LSHFT &kp LCTRL &kp LALT &kp LGUI &tog 0>;
 
             label = "MACRO_OFF";
         };
@@ -1487,10 +1487,10 @@
 
         mod {
             bindings = <
-  &none      &none      &none       &none       &none    &none  &none       &none       &none      &none
-  &ssk LGUI  &ssk LALT  &ssk LCTRL  &ssk LSHFT  &none    &none  &ssk RSHFT  &ssk RCTRL  &ssk RALT  &ssk RGUI
-  &none      &none      &none       &none       &none    &none  &none       &none       &none      &none
-                                    &none       &none    &none  &none
+  &none      &none      &macro_mod_off  &none       &none    &none  &none       &none       &none      &none
+  &ssk LGUI  &ssk LALT  &ssk LCTRL      &ssk LSHFT  &none    &none  &ssk RSHFT  &ssk RCTRL  &ssk RALT  &ssk RGUI
+  &none      &none      &none           &none       &none    &none  &none       &none       &none      &none
+                                        &none       &none    &none  &none
             >;
         };
 
