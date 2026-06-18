@@ -564,10 +564,10 @@
             bindings =
                 <&m_en>,
                 <&macro_press>,
-                <&mo 0 &mo 21>,
+                <&mo 0 &mo 22>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mo 21 &mo 0>,
+                <&mo 22 &mo 0>,
                 <&macro_tap>,
                 <&m_ru>;
 
@@ -1338,7 +1338,7 @@
   &hml LGUI Q  &hlt 6 W     &hlt 8 E      &hlt 6 R      &kp T     &kp Y    &kp U         &kp I         &kp O        &kp P
   &hlt 10 A    &hml LALT S  &hml LCTRL D  &hml LSHFT F  &kp G     &lt 8 H  &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L  &hmr RGUI SEMI
   &kp Z        &kp X        &kp C         &kp V         &kp B     &kp N    &kp M         &kp COMMA     &kp DOT      &kp FSLH
-                                          &lt 3 SPACE   &mo 11    &mo 11   &m_to_ru
+                                          &lt 3 SPACE   &mo 11    &mo 11   &mo 14
             >;
 
             display-name = "EN";
@@ -1349,7 +1349,7 @@
   &hml LGUI RU_CYRILLIC_SHORT_I  &hlt 7 RU_CYRILLIC_TSE      &hlt 9 RU_CYRILLIC_U       &hlt 7 RU_CYRILLIC_KA     &kp RU_CYRILLIC_IE    &kp RU_CYRILLIC_EN    &kp RU_CYRILLIC_GHE        &kp RU_CYRILLIC_SHA        &kp RU_CYRILLIC_SHCHA     &kp RU_CYRILLIC_ZE
   &hlt 10 RU_CYRILLIC_EF         &hml LALT RU_CYRILLIC_YERU  &hml LCTRL RU_CYRILLIC_VE  &hml LSHFT RU_CYRILLIC_A  &kp RU_CYRILLIC_PE    &lt 9 RU_CYRILLIC_ER  &hmr RSHFT RU_CYRILLIC_O   &hmr RCTRL RU_CYRILLIC_EL  &hmr RALT RU_CYRILLIC_DE  &hmr RGUI RU_CYRILLIC_ZHE
   &kp RU_CYRILLIC_YA             &kp RU_CYRILLIC_CHE         &kp RU_CYRILLIC_ES         &kp RU_CYRILLIC_EM        &kp RU_CYRILLIC_I     &kp RU_CYRILLIC_TE    &kp RU_CYRILLIC_SOFT_SIGN  &kp RU_CYRILLIC_BE         &kp RU_CYRILLIC_YU        &kp RU_CYRILLIC_HA
-                                                                                        &lt 3 SPACE               &mo 11                &mo 11                &m_to_en
+                                                                                        &lt 3 SPACE               &mo 11                &mo 11                &mo 14
             >;
 
             display-name = "RU";
@@ -1485,6 +1485,15 @@
             label = "HINT 2";
         };
 
+        mod {
+            bindings = <
+  &none     &none     &none      &none      &none    &none  &none      &none      &none     &none
+  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none    &none  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI
+  &none     &none     &none      &none      &none    &none  &none      &none      &none     &none
+                                 &none      &none    &none  &none
+            >;
+        };
+
         sys {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
@@ -1502,7 +1511,7 @@
   &kp Q        &kp W        &kp E         &kp R         &kp T    &kp Y  &kp U         &kp I         &kp O        &kp P
   &hrm LGUI A  &hrm LALT S  &hrm LCTRL D  &hrm LSHFT F  &kp G    &kp H  &hrm LSHFT J  &hrm LCTRL K  &hrm LALT L  &hrm LGUI SEMI
   &kp Z        &kp X        &kp C         &kp V         &kp B    &kp N  &kp M         &kp COMMA     &kp DOT      &kp SLASH
-                                          &mo 15        &none    &none  &none
+                                          &mo 16        &none    &none  &none
             >;
         };
 
