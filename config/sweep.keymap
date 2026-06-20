@@ -1275,8 +1275,7 @@
 
         combo_caps_lock {
             bindings = <&kp CAPS>;
-            key-positions = <7 8>;
-            layers = <1>;
+            key-positions = <>;
         };
 
         mouse_esc {
