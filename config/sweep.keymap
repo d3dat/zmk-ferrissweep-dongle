@@ -1353,7 +1353,7 @@
         };
 
         combo_caps_word_ru {
-            bindings = <&caps_word>;
+            bindings = <&caps_word_ru>;
             key-positions = <6 16>;
             layers = <1>;
         };
