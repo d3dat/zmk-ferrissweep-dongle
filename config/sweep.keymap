@@ -1413,10 +1413,10 @@
 
         ext_ru {
             bindings = <
-  &none     &m_warpd_hint  &none  &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LALT  &kp LCTRL      &none  &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
-  &none     &none          &none  &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
-                                  &tp LSHFT SPACE  &none    &none              &kp SPACE
+  &none     &m_warpd_hint  &none      &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT       &kp LCTRL  &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
+  &none     &none          &none      &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
+                                      &tp LSHFT SPACE  &none    &none              &kp SPACE
             >;
 
             display-name = "EXT RU";
