@@ -25,6 +25,8 @@
     require-prior-idle-ms = <50>;
 };
 
+&sl { release-after-ms = <1000>; };
+
 / {
     behaviors {
         ht: hold_tap {
