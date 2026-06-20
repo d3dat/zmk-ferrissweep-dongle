@@ -25,6 +25,8 @@
 
 &sl { release-after-ms = <1000>; };
 
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA DOT SLASH>; };
+
 / {
     behaviors {
         ht: hold_tap {
@@ -1353,7 +1355,7 @@
         };
 
         combo_caps_word_ru {
-            bindings = <&caps_word_ru>;
+            bindings = <&caps_word>;
             key-positions = <6 16>;
             layers = <1>;
         };
