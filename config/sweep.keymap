@@ -1115,7 +1115,7 @@
 
         ret {
             bindings = <&kp RET>;
-            key-positions = <6 16>;
+            key-positions = <>;
             timeout-ms = <50>;
             require-prior-idle-ms = <250>;
         };
