@@ -463,7 +463,7 @@
             compatible = "zmk,behavior-caps-word";
             label = "CAPS_WORD_RU";
             #binding-cells = <0>;
-            continue-list = <COMMA DOT SLASH>;
+            continue-list = <COMMA DOT SLASH UNDERSCORE BACKSPACE DELETE>;
         };
     };
 
