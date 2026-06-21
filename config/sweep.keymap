@@ -25,7 +25,7 @@
 
 &sl { release-after-ms = <1000>; };
 
-&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA DOT SEMICOLON>; };
+&caps_word { continue-list = <UNDERSCORE BACKSPACE DELETE COMMA DOT SLASH SEMICOLON>; };
 
 / {
     behaviors {
