@@ -1022,7 +1022,7 @@
 
         combo_caps_word {
             bindings = <&caps_word>;
-            key-positions = <7 8>;
+            key-positions = <7 6>;
             layers = <0 1>;
         };
 
