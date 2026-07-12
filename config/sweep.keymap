@@ -1061,7 +1061,7 @@
 
         c_bootloader_r {
             bindings = <&bootloader>;
-            key-positions = <>;
+            key-positions = <9 19 29>;
         };
 
         c_l_click {
