@@ -1441,10 +1441,10 @@
 
         nav {
             bindings = <
-  &kp BACKSPACE  &tog 11    &kp ESCAPE  &key_repeat  &kp CAPS          &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
-  &kp LEFT_GUI   &kp LALT   &kp LCTRL   &kp LSHFT    &swap_win         &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
-  &kp LC(Z)      &kp LC(X)  &kp LC(C)   &kp LC(V)    &swap_tab         &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
-                                        &none        &macro_mod_off    &m_handy   &none
+  &none         &kp BACKSPACE  &kp ESCAPE  &key_repeat  &kp CAPS          &kp INS    &kp HOME       &kp PG_UP  &kp PG_DN  &kp END
+  &kp LEFT_GUI  &kp LALT       &kp LCTRL   &kp LSHFT    &swap_win         &kp TAB    &kp LEFT       &kp UP     &kp DOWN   &kp RIGHT
+  &kp LC(Z)     &kp LC(X)      &kp LC(C)   &kp LC(V)    &swap_tab         &kp SPACE  &kp BACKSPACE  &kp RET    &kp DEL    &kp ESC
+                                           &none        &macro_mod_off    &m_handy   &none
             >;
 
             display-name = "NAV";
@@ -1452,10 +1452,10 @@
 
         ext {
             bindings = <
-  &kp BACKSPACE  &tog 11   &kp ESC    &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
-  &kp LGUI       &kp LALT  &kp LCTRL  &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
-  &none          &none     &none      &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
-                                      &tp LSHFT SPACE  &none    &none           &none
+  &kp LGUI  &kp BACKSPACE  &kp ESC  &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
+  &kp LALT  &tog 11        &mo 11   &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
+  &none     &none          &none    &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
+                                    &tp LCTRL SPACE  &none    &none           &none
             >;
 
             display-name = "EXT";
@@ -1463,10 +1463,10 @@
 
         ext_ru {
             bindings = <
-  &kp BACKSPACE  &tog 11   &kp ESC    &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LGUI       &kp LALT  &kp LCTRL  &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
-  &none          &none     &none      &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
-                                      &tp LSHFT SPACE  &none    &none              &kp SPACE
+  &kp LGUI  &kp BACKSPACE  &kp ESC  &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LALT  &tog 11        &mo 11   &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
+  &none     &none          &none    &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
+                                    &tp LCTRL SPACE  &none    &none              &kp SPACE
             >;
 
             display-name = "EXT RU";
@@ -1494,9 +1494,9 @@
 
         num {
             bindings = <
-  &kp BACKSPACE  &tog 11   &none  &none            &none    &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI       &kp LALT  &none  &kp LSHFT        &none    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
-  &none          &none     &none  &none            &none    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
+  &none     &kp BACKSPACE  &none  &none            &none    &kp SLASH   &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &none  &kp LSHFT        &none    &kp PERIOD  &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none          &none  &none            &none    &kp COMMA   &kp N1  &kp N2  &kp N3     &kp N4
                                   &tp LCTRL SPACE  &none    &none       &none
             >;
 
@@ -1505,9 +1505,9 @@
 
         num_ru {
             bindings = <
-  &kp BACKSPACE  &tog 11   &none  &none            &none    &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-  &kp LGUI       &kp LALT  &none  &kp LSHFT        &none    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
-  &none          &none     &none  &none            &none    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
+  &none     &kp BACKSPACE  &none  &none            &none    &kp LS(BACKSLASH)  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
+  &kp LGUI  &kp LALT       &none  &kp LSHFT        &none    &kp SLASH          &kp N5  &kp N6  &kp N7     &kp N8
+  &none     &none          &none  &none            &none    &kp LS(SLASH)      &kp N1  &kp N2  &kp N3     &kp N4
                                   &tp LCTRL SPACE  &none    &none              &none
             >;
 
@@ -1527,10 +1527,10 @@
 
         mouse {
             bindings = <
-  &kp LALT        &tog 11         &kp ESC       &kp LCTRL        &kp LC(C)      &kp LC(V)        &mkp LCLK          &msc SCRL_UP       &msc SCRL_DOWN    &mkp RCLK
-  &mkp RCLK       &msc SCRL_DOWN  &msc SCRL_UP  &mkp LCLK        &kp LA(TAB)    &kp RSHIFT       &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
-  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LC(TAB)    &msc SCRL_RIGHT  &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
-                                                &tog 11          &none          &msc SCRL_LEFT   &tog 11
+  &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp ESC       &kp LCTRL        &kp LC(C)      &kp LC(V)   &mkp LCLK          &msc SCRL_UP       &msc SCRL_DOWN    &mkp RCLK
+  &mkp RCLK       &tog 11          &kp LALT      &mkp LCLK        &kp LA(TAB)    &kp RSHIFT  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LC(TAB)    &kp RCTRL   &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
+                                                 &tog 11          &none          &none       &tog 11
             >;
 
             display-name = "MOUSE";
