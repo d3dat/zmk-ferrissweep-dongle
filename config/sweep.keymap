@@ -1054,7 +1054,7 @@
 
         combo_mouse_l {
             bindings = <&mo 11>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
             layers = <0 1>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
@@ -1062,7 +1062,7 @@
 
         combo_mouse {
             bindings = <&tog 11>;
-            key-positions = <21 22>;
+            key-positions = <>;
             layers = <3 0 1>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
@@ -1321,7 +1321,7 @@
 
         combo_mouse_r {
             bindings = <&mo 11>;
-            key-positions = <17 18>;
+            key-positions = <>;
             layers = <0 1>;
         };
 
@@ -1387,7 +1387,7 @@
 
         c_to_ru_l {
             bindings = <&m_to_ru>;
-            key-positions = <12 13>;
+            key-positions = <>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
             layers = <0>;
@@ -1395,7 +1395,7 @@
 
         c_to_en_l {
             bindings = <&m_to_en>;
-            key-positions = <12 13>;
+            key-positions = <>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
             layers = <1>;
