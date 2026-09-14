@@ -1054,16 +1054,16 @@
 
         combo_mouse_l {
             bindings = <&mo 11>;
-            key-positions = <12 13>;
+            key-positions = <>;
             layers = <0 1>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
         };
 
         combo_mouse {
-            bindings = <&tog 11>;
-            key-positions = <>;
-            layers = <3 0 1>;
+            bindings = <&mo_tog 11 11>;
+            key-positions = <12 13>;
+            layers = <0 1>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
         };
