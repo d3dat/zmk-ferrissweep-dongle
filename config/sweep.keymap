@@ -1130,16 +1130,18 @@
 
         c_to_ru {
             bindings = <&m_to_ru>;
-            key-positions = <>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <200>;
+            key-positions = <17 18>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <250>;
+            layers = <0>;
         };
 
         c_to_en {
             bindings = <&m_to_en>;
-            key-positions = <>;
-            timeout-ms = <30>;
-            require-prior-idle-ms = <200>;
+            key-positions = <18 17>;
+            timeout-ms = <70>;
+            require-prior-idle-ms = <250>;
+            layers = <1>;
         };
 
         c_ru_alt {
@@ -1396,12 +1398,12 @@
             key-positions = <12 13>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
-            layers = <1 14>;
+            layers = <1>;
         };
 
         combo_mouse_tog {
             bindings = <&mo 11>;
-            key-positions = <12 13>;
+            key-positions = <>;
             layers = <11>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
