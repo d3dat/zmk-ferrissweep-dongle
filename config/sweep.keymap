@@ -473,6 +473,17 @@
             hold-trigger-on-release;
             flavor = "balanced";
         };
+
+        mo_tog: mo_tog {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <125>;
+            label = "MO_TOG";
+            bindings = <&mo>, <&tog>;
+        };
     };
 
     macros {
@@ -1452,10 +1463,10 @@
 
         ext {
             bindings = <
-  &kp LGUI  &kp BACKSPACE  &kp ESC  &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
-  &kp LALT  &tog 11        &mo 11   &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
-  &none     &none          &none    &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
-                                    &tp LCTRL SPACE  &none    &none           &none
+  &kp LGUI  &kp BACKSPACE  &kp ESC        &none            &none    &kp PLUS        &kp MINUS        &kp DQT    &kp COLON      &kp SEMI
+  &kp LGUI  &kp LALT       &mo_tog 11 11  &none            &none    &kp UNDERSCORE  &kp BACKSPACE    &mm_comma  &mm_dot        &kp ASTERISK
+  &none     &none          &none          &none            &none    &kp QMARK       &kp EXCLAMATION  &kp SQT    &kp AMPERSAND  &kp TILDE
+                                          &tp LCTRL SPACE  &none    &none           &none
             >;
 
             display-name = "EXT";
@@ -1463,10 +1474,10 @@
 
         ext_ru {
             bindings = <
-  &kp LGUI  &kp BACKSPACE  &kp ESC  &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
-  &kp LALT  &tog 11        &mo 11   &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
-  &none     &none          &none    &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
-                                    &tp LCTRL SPACE  &none    &none              &kp SPACE
+  &kp LGUI  &kp BACKSPACE  &kp ESC        &none            &none    &kp PLUS           &kp RU_MINUS        &kp RU_DQT   &kp RU_COLON   &kp RU_SEMICOLON
+  &kp LGUI  &kp LALT       &mo_tog 11 11  &none            &none    &kp RU_UNDERSCORE  &kp BACKSPACE       &mm_r_comma  &mm_r_dot      &kp RU_ASTERISK
+  &none     &none          &none          &none            &none    &kp RU_QUESTION    &kp RU_EXCLAMATION  &kp PERCENT  &kp RU_NUMERO  &kp RU_SLASH
+                                          &tp LCTRL SPACE  &none    &none              &kp SPACE
             >;
 
             display-name = "EXT RU";
@@ -1528,7 +1539,7 @@
         mouse {
             bindings = <
   &msc SCRL_LEFT  &msc SCRL_RIGHT  &kp ESC       &kp LCTRL        &kp LC(C)      &kp LC(V)   &mkp LCLK          &msc SCRL_UP       &msc SCRL_DOWN    &mkp RCLK
-  &mkp RCLK       &tog 11          &kp LALT      &mkp LCLK        &kp LA(TAB)    &kp RSHIFT  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
+  &mkp RCLK       &kp LALT         &tog 11       &mkp LCLK        &kp LA(TAB)    &kp RSHIFT  &mmv MOVE_LEFT     &mmv MOVE_UP       &mmv MOVE_DOWN    &mmv MOVE_RIGHT
   &mmv MOVE_LEFT  &mmv MOVE_DOWN   &mmv MOVE_UP  &mmv MOVE_RIGHT  &kp LC(TAB)    &kp RCTRL   &mmv MOVE_X(-200)  &mmv MOVE_Y(-200)  &mmv MOVE_Y(200)  &mmv MOVE_X(200)
                                                  &tog 11          &none          &none       &tog 11
             >;
