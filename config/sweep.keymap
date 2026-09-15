@@ -1402,8 +1402,8 @@
         };
 
         combo_mouse_tog {
-            bindings = <&mo 11>;
-            key-positions = <>;
+            bindings = <&tog 11>;
+            key-positions = <12 13>;
             layers = <11>;
             timeout-ms = <70>;
             require-prior-idle-ms = <250>;
